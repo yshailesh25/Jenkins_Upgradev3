@@ -5,5 +5,7 @@
 <p>poll scm is up</p>
 
 <p>Complete build pipeline view is created</p>
+
+<p>Package Buils >> Deploy to stageEnv >> Deploy to ProdEnv</p> 
 </body>
 </html>
