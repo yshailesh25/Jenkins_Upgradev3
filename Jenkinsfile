@@ -1,15 +1,15 @@
 pipeline {
       agent any
       stages {
-            stage('Init') {
+            stage('Build stage') {
                   steps {
-                        print 'Hi, this is Anshul from LevelUp360'
-                        print 'We are Starting the Testing'
+                        print 'Code build is completed'
+                        print 'unit test is also performed'
                   }
             }
-            stage('Build') {
+            stage('Test build') {
                   steps {
-                        print 'Building Sample Maven Project'
+                        print 'Test build : functional,non functional,regression and performance'
                   }
             }
             stage('Deploy') {
@@ -17,10 +17,6 @@ pipeline {
                         print "Deploying in Staging Area"
                   }
             }
-            stage('Deploy Production') {
-                  steps {
-                        print "Deploying in Production Area"
-                  }
-            }
+            
       }
 }
