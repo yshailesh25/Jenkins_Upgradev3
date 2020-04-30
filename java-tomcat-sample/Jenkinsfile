@@ -12,6 +12,13 @@ pipeline {
                 }
             }
         }
+        stage('Deploy in Staging Environment'){
+            steps{
+                build job: 'Deploy_package_to_tomcat_stagingEnv'
+
+            }
+            
+        }
         
     }
 }
