@@ -6,6 +6,8 @@
 
 <p>Complete build pipeline view is created</p>
 
-<p>Package Buils >> Deploy to stageEnv >> Deploy to ProdEnv</p> 
+<p>Package Buils >> Deploy to stageEnv >> Deploy to ProdEnv</p>
+
+<p>Now i completed this with code</p> 
 </body>
 </html>
