@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy in Staging Environment'){
             steps{
-                build job: 'Deploy_package_to_tomcat_stagingEnv'
+                build job: 'deploy application on stagingEnv'
             }
             post {
 			   success{
@@ -27,7 +27,7 @@ pipeline {
                 timeout(time:5, unit:'DAYS'){
                     input message:'Approve PRODUCTION Deployment?'
                 }
-                build job: 'Deploy_package_to_tomcat_prodEnv'
+                build job: 'deploy application on profEnv'
             }
         }
     }
